@@ -7,12 +7,9 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 [CERN-OHL-P-2.0](https://choosealicense.com/licenses/cern-ohl-p-2.0/).
 
 # Pictures
-<details><summary>Click to open</summary>
-
 | Front                               | Back                              |
 |:------------------------------------|:----------------------------------|
 | ![Front of PCB](./Images/front.png) | ![Back of PCB](./Images/back.png) |
-</details>
 
 ## Features
 - Small size based on Heltec v3: You can use the same cases!

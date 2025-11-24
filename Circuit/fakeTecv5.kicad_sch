@@ -3093,6 +3093,17 @@
 		)
 		(uuid "32082f4f-4df2-4959-acd7-c7196602deb9")
 	)
+	(text "The N!ce Nano already has\novervoltage protection, but\ndoes not prevent overdischarge\nduring use. This BMS ensures\nthat the device shuts off \nif the battery voltage \ndrops below 2.9v."
+		(exclude_from_sim no)
+		(at 90.678 189.992 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3e06ab4a-5d9b-4666-9baf-5fa3a76f6bb7")
+	)
 	(text "BMS for overdischarge protection"
 		(exclude_from_sim no)
 		(at 20.32 145.542 0)
@@ -3126,7 +3137,7 @@
 		)
 		(uuid "92152fff-744f-4d3c-b567-3fa2f95a43a6")
 	)
-	(text "Onboard buttons, RST for resetting,\nBTN is programmable, connected to D6"
+	(text "Onboard buttons, RST for resetting,\nBTN is programmable, connected to D6 (P1.00)"
 		(exclude_from_sim no)
 		(at 19.558 57.15 0)
 		(effects
