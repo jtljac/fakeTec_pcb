@@ -8985,7 +8985,7 @@
 				)
 			)
 		)
-		(property "Footprint" "faketec:NICE!NANO and pro-micro V2_2 SMD"
+		(property "Footprint" "faketec:NICE!NANO and pro-micro V2_2 SMD_With_Alignment_Holes"
 			(at 124.46 82.55 0)
 			(effects
 				(font
