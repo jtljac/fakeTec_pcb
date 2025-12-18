@@ -4946,6 +4946,66 @@
 		)
 		(uuid "0a8554fa-abd4-4bec-9d18-11d8bb1dc1f8")
 	)
+	(text_box "ENC_B\nHW GPIO: P1.02\nPlatformIO GPIO: 34"
+		(exclude_from_sim no)
+		(at 247.65 19.05 0)
+		(size 16.51 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left top)
+		)
+		(uuid "1550c9f0-9d2a-4903-b9e9-34331923d442")
+	)
+	(text_box "ENC_A\nHW GPIO: P1.07\nPlatformIO GPIO: 39"
+		(exclude_from_sim no)
+		(at 228.6 19.05 0)
+		(size 17.78 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left top)
+		)
+		(uuid "35bc6145-cf1a-40ab-883f-74205d6814fb")
+	)
+	(text_box "ENC_PUSH\nHW GPIO: P1.01\nPlatformIO GPIO: 33"
+		(exclude_from_sim no)
+		(at 265.43 19.05 0)
+		(size 16.51 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left top)
+		)
+		(uuid "3f0080f2-b1fa-48b1-ab35-a2814126475a")
+	)
 	(text_box "Alternatively can use SI2312 (More expensive. Higher current)"
 		(exclude_from_sim no)
 		(at 229.87 102.87 0)
@@ -5026,10 +5086,10 @@
 		)
 		(uuid "7d81b534-9e57-4f09-9b60-ef40bcd7a323")
 	)
-	(text_box "Can pick any EC11 encoder that fits your enclosure,\nsince you will wire point to point anyway."
+	(text_box "Pick any EC11 encoder that fits your enclosure"
 		(exclude_from_sim no)
-		(at 236.22 16.51 0)
-		(size 44.45 5.08)
+		(at 201.93 44.45 0)
+		(size 21.59 5.08)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -5582,7 +5642,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 33.02) (xy 246.38 38.1)
+			(xy 246.38 36.83) (xy 246.38 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5612,7 +5672,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 30.48) (xy 279.4 30.48)
+			(xy 270.51 34.29) (xy 280.67 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5742,7 +5802,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 33.02) (xy 246.38 33.02)
+			(xy 255.27 36.83) (xy 246.38 36.83)
 		)
 		(stroke
 			(width 0)
@@ -6242,7 +6302,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 35.56) (xy 271.78 35.56)
+			(xy 270.51 39.37) (xy 278.13 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6342,7 +6402,7 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 35.56) (xy 271.78 38.1)
+			(xy 278.13 39.37) (xy 278.13 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6662,7 +6722,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 35.56) (xy 254 35.56)
+			(xy 248.92 39.37) (xy 255.27 39.37)
 		)
 		(stroke
 			(width 0)
@@ -8132,7 +8192,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 30.48) (xy 254 30.48)
+			(xy 248.92 34.29) (xy 255.27 34.29)
 		)
 		(stroke
 			(width 0)
@@ -8491,7 +8551,7 @@
 		(uuid "74d9d8c4-128a-4f88-b7f3-80a3a432ba73")
 	)
 	(label "ENC_A"
-		(at 247.65 30.48 0)
+		(at 248.92 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8711,7 +8771,7 @@
 		(uuid "b6413ff2-6f31-4eca-a79c-acafcf7bb956")
 	)
 	(label "ENC_PUSH"
-		(at 269.24 30.48 0)
+		(at 270.51 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8891,7 +8951,7 @@
 		(uuid "ead3b708-3f64-45d5-8161-68c88a71a2c3")
 	)
 	(label "ENC_B"
-		(at 247.65 35.56 0)
+		(at 248.92 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9292,7 +9352,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 246.38 38.1 0)
+		(at 246.38 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9300,7 +9360,7 @@
 		(dnp no)
 		(uuid "02f25fc5-ef89-4eeb-bea3-2477772724ec")
 		(property "Reference" "#PWR09"
-			(at 246.38 44.45 0)
+			(at 246.38 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9309,7 +9369,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 250.19 39.624 0)
+			(at 246.38 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9317,7 +9377,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 38.1 0)
+			(at 246.38 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9326,7 +9386,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 38.1 0)
+			(at 246.38 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9335,7 +9395,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 246.38 38.1 0)
+			(at 246.38 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11455,7 +11515,7 @@
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch")
-		(at 261.62 33.02 0)
+		(at 262.89 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -11463,7 +11523,7 @@
 		(dnp no)
 		(uuid "4caa9c0d-3b25-499c-a333-4412e0866504")
 		(property "Reference" "SW3"
-			(at 261.62 24.13 0)
+			(at 262.89 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11471,7 +11531,7 @@
 			)
 		)
 		(property "Value" "RotaryEncoder_Switch"
-			(at 261.62 26.67 0)
+			(at 262.89 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11479,7 +11539,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 257.81 28.956 0)
+			(at 259.08 32.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11488,7 +11548,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.cuidevices.com/product/resource/acz11.pdf"
-			(at 261.62 26.416 0)
+			(at 262.89 30.226 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11497,7 +11557,7 @@
 			)
 		)
 		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
-			(at 261.62 33.02 0)
+			(at 262.89 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11506,7 +11566,7 @@
 			)
 		)
 		(property "MPD" "EC11 horizontal rotary encoder Plum blossom shaft With switch 15/20mm 5PIN 20bit pulse digital potentiometer With knob cap"
-			(at 261.62 33.02 0)
+			(at 262.89 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11515,7 +11575,7 @@
 			)
 		)
 		(property "MPL" "https://www.aliexpress.com/item/1005010398201852.html or https://www.digikey.com.au/en/products/detail/same-sky-formerly-cui-devices/ACZ11BR1E-15KQA1-12C/1923334"
-			(at 261.62 33.02 0)
+			(at 262.89 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11524,7 +11584,7 @@
 			)
 		)
 		(property "Shopping" "https://www.aliexpress.com/w/wholesale-rotary-encoder-EC11-horizontal.html or https://www.digikey.com.au/short/7v5m7j9j"
-			(at 261.62 33.02 0)
+			(at 262.89 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11533,23 +11593,23 @@
 			)
 		)
 		(property "MPN" "ACZ11BR1E-15KQA1-12C"
-			(at 261.874 45.72 0)
+			(at 262.382 47.752 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
 		(property "Manufacturer" "Same Sky (Formerly CUI Devices)"
-			(at 262.89 48.006 0)
+			(at 262.636 49.53 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
 		(property "Package" "EC11"
-			(at 261.62 33.02 0)
+			(at 262.89 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14626,7 +14686,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 271.78 38.1 0)
+		(at 278.13 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14634,7 +14694,7 @@
 		(dnp no)
 		(uuid "7ec9268a-4929-4f5f-b207-97420eab0afc")
 		(property "Reference" "#PWR047"
-			(at 271.78 44.45 0)
+			(at 278.13 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14643,7 +14703,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 275.59 39.624 0)
+			(at 278.13 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14651,7 +14711,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 38.1 0)
+			(at 278.13 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14660,7 +14720,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 38.1 0)
+			(at 278.13 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14669,7 +14729,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 38.1 0)
+			(at 278.13 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16034,7 +16094,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "faketec:OLED_PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "faketec:OLED_PinHeader_1x04_P2.54mm_Vertical_Friction_Fit"
 			(at 179.07 30.48 0)
 			(effects
 				(font
