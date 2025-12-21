@@ -1,7 +1,6 @@
-# for KiCad 8
-
 # Adapted from:
 # https://gist.github.com/cowboy/71a35998640eb5a6c50680c979b35187
+# https://gitignore.org/KiCad
 
 # Temporary files
 *.000
@@ -10,17 +9,20 @@
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *.kicad_prl
-*.sch-bak
+*-backups
+*-cache*
+*-bak
+*-bak*
 *~
+~*
 _autosave-*
+\#auto_saved_files\#
 *.tmp
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
-/build
-*.lck
+~*.lck
 \#auto_saved_files#
-
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -36,6 +38,9 @@ fp-info-cache
 #*.xml
 #*.csv
 #*.tsv
+
+# Archived Backups (KiCad 6.0)
+**/*-backups/*.zip
 
 # Misc
 *.log
