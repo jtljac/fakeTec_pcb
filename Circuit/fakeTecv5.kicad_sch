@@ -4969,6 +4969,26 @@
 		)
 		(uuid "effe7a2a-b721-4620-9215-5216710e88e0")
 	)
+	(text_box "GPS Config:\nPosition --> Receive Pin = 22\nPosition --> Transmit Pin = 20\nPosition --> Enable Pin = 24\n(May not need to be set as this is already\npart of the compiled in variant.h settings. e.g.\nPIN_GPS_EN=24, PIN_GPS_TX=20, PIN_GPS_RX=22)"
+		(exclude_from_sim no)
+		(at 302.26 59.69 0)
+		(size 62.23 16.51)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0225cbd2-190d-4704-a6b2-f581208dca19")
+	)
 	(text_box "FET1 is also connected to the GPS pads' Ground."
 		(exclude_from_sim no)
 		(at 236.22 77.47 0)
@@ -5071,7 +5091,7 @@
 	)
 	(text_box "Mostly found in LCSC"
 		(exclude_from_sim no)
-		(at 252.73 157.48 0)
+		(at 252.73 158.75 0)
 		(size 27.94 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -5169,6 +5189,26 @@
 		)
 		(uuid "a12526fd-ce44-4d25-8132-1c11f6d8111c")
 	)
+	(text_box "Vibration Config:\nExternal Notification --> External notification enabled = on\nExternal Notification --> Alert message Vibrate = on\nExternal Notification --> Alert Bell Vibrate = on\nExternal Notification --> Output buzzer (GPIO) = 8\n"
+		(exclude_from_sim no)
+		(at 302.26 88.9 0)
+		(size 62.23 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "aa2a3fd9-5d4b-4f23-9813-87a7cd840364")
+	)
 	(text_box "C1 used for getting more stable and accurate readings"
 		(exclude_from_sim no)
 		(at 15.24 38.1 0)
@@ -5248,6 +5288,26 @@
 			(justify left top)
 		)
 		(uuid "cda86adc-7d8f-4dba-9df8-13792465c121")
+	)
+	(text_box "Buzzer Config:\nDevice --> Redefine PIN_BUZZER = 6\nExternal Notification --> External notification enabled = on\nExternal Notification --> Alert message buzzer = on\nExternal Notification --> Alert Bell Buzzer = on\nExternal Notification --> Output buzzer (GPIO) = 6\nExternal Notification --> Use PWM buzzer = on"
+		(exclude_from_sim no)
+		(at 302.26 113.03 0)
+		(size 62.23 16.51)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ce445d3c-8c85-46da-8d21-c9b78d6e88b2")
 	)
 	(text_box "The N!ce Nano already has overvoltage protection, but does not prevent overdischarge during use.\nThis BMS ensures that the device shuts off if the battery voltage drops below 2.9v"
 		(exclude_from_sim no)
@@ -5642,6 +5702,16 @@
 			(type default)
 		)
 		(uuid "0915c5d2-dd7a-477b-85cd-cdcb4b99cb9b")
+	)
+	(wire
+		(pts
+			(xy 262.89 143.51) (xy 262.89 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c7f2219-66cb-4c13-9699-4ac80d0ab54b")
 	)
 	(wire
 		(pts
@@ -6285,6 +6355,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 146.05) (xy 269.24 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4387f77d-3410-4ef9-800c-5d7dc001036b")
+	)
+	(wire
+		(pts
 			(xy 241.3 110.49) (xy 261.62 110.49)
 		)
 		(stroke
@@ -6685,16 +6765,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 143.51) (xy 267.97 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c7f6c7a-bd37-45eb-ac7d-995656efbdeb")
-	)
-	(wire
-		(pts
 			(xy 186.69 148.59) (xy 195.58 148.59)
 		)
 		(stroke
@@ -6725,7 +6795,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 146.05) (xy 217.17 147.32)
+			(xy 217.17 144.78) (xy 217.17 146.05)
 		)
 		(stroke
 			(width 0)
@@ -6952,16 +7022,6 @@
 			(type default)
 		)
 		(uuid "8218bf65-6961-48a0-abad-eccb7be99014")
-	)
-	(wire
-		(pts
-			(xy 256.54 148.59) (xy 256.54 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83075630-9420-4727-b28a-73f436352465")
 	)
 	(wire
 		(pts
@@ -7555,6 +7615,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 151.13) (xy 269.24 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbd4c21f-ce4c-43a2-942d-4e956a909633")
+	)
+	(wire
+		(pts
 			(xy 130.81 24.13) (xy 135.89 24.13)
 		)
 		(stroke
@@ -7682,16 +7752,6 @@
 			(type default)
 		)
 		(uuid "c667ef7e-9df1-40db-a211-8ccd24373bc5")
-	)
-	(wire
-		(pts
-			(xy 267.97 148.59) (xy 256.54 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c81f0f17-a624-447c-bf1d-fe844bb0338f")
 	)
 	(wire
 		(pts
@@ -8723,6 +8783,16 @@
 		)
 		(uuid "8d16e5f5-f83f-462a-9ffa-91ed25fe535b")
 	)
+	(label "BUZZER"
+		(at 255.27 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "91dd4c5a-5195-4f4a-8fed-b87d538f5185")
+	)
 	(label "SDA"
 		(at 96.52 92.71 0)
 		(effects
@@ -8922,16 +8992,6 @@
 			(justify left bottom)
 		)
 		(uuid "d729cb8f-0b91-417e-ab8c-f5546d4f577b")
-	)
-	(label "BUZZER"
-		(at 265.43 143.51 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d89c31b2-c549-409e-8177-469099ae20d3")
 	)
 	(label "SCL"
 		(at 96.52 90.17 0)
@@ -10822,7 +10882,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 270.51 146.05 0)
+		(at 271.78 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10830,7 +10890,7 @@
 		(dnp no)
 		(uuid "2abf58af-a70f-4f52-852b-99bfc98d41c0")
 		(property "Reference" "BZ1"
-			(at 274.828 146.558 0)
+			(at 276.098 149.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10839,7 +10899,7 @@
 			)
 		)
 		(property "Value" "Buzzer 5020"
-			(at 266.954 140.462 0)
+			(at 268.224 143.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10848,7 +10908,7 @@
 			)
 		)
 		(property "Footprint" "faketec:Buzzer_5020"
-			(at 269.875 143.51 90)
+			(at 271.145 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10857,7 +10917,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C7544810.pdf"
-			(at 269.875 143.51 90)
+			(at 271.145 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10866,7 +10926,7 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized"
-			(at 270.51 146.05 0)
+			(at 271.78 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10875,7 +10935,7 @@
 			)
 		)
 		(property "Shopping" "https://www.lcsc.com/search?q=Buzzer_5020&s_z=n_Buzzer_5020"
-			(at 270.51 146.05 0)
+			(at 271.78 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10884,7 +10944,7 @@
 			)
 		)
 		(property "MPN" "HYG-5020A"
-			(at 271.018 153.162 0)
+			(at 271.272 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10892,7 +10952,7 @@
 			)
 		)
 		(property "Manufacturer" "HYDZ"
-			(at 267.716 150.876 0)
+			(at 267.97 153.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10900,7 +10960,7 @@
 			)
 		)
 		(property "Package" "SMD,5x5mm"
-			(at 270.51 146.05 0)
+			(at 271.78 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10909,7 +10969,7 @@
 			)
 		)
 		(property "MPD" "75dB 4kHz 3V SMD,5x5mm Alarms, Buzzers, and Sirens RoHS"
-			(at 270.51 146.05 0)
+			(at 271.78 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10918,7 +10978,7 @@
 			)
 		)
 		(property "MPL" "https://www.lcsc.com/product-detail/C7544810.html?s_z=n_buzzer%25205020"
-			(at 270.51 146.05 0)
+			(at 271.78 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14074,6 +14134,71 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 217.17 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74bf9411-906d-4d63-b4a7-e711b5650d86")
+		(property "Reference" "#PWR050"
+			(at 217.17 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 217.17 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 217.17 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a758510-1732-40e1-bd4b-03177c9869d4")
+		)
+		(instances
+			(project "fakeTecv5"
+				(path "/9f57df6b-a9d3-4597-bf34-a2cbfc394ff5"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 186.69 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16991,6 +17116,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 262.89 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b206dc00-97a0-4ed9-a87b-ff415316d9e2")
+		(property "Reference" "#PWR028"
+			(at 262.89 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 262.89 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 262.89 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f582092e-6ec9-476f-a0b2-d02961157bb6")
+		)
+		(instances
+			(project "fakeTecv5"
+				(path "/9f57df6b-a9d3-4597-bf34-a2cbfc394ff5"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 99.06 179.07 270)
 		(unit 1)
@@ -17938,71 +18128,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 217.17 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d60db94d-ecc6-44b2-966d-22592735cfd0")
-		(property "Reference" "#PWR049"
-			(at 217.17 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 217.17 150.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "37732cf8-fb28-4623-8cb2-28e377b2a250")
-		)
-		(instances
-			(project "fakeTecv5"
-				(path "/9f57df6b-a9d3-4597-bf34-a2cbfc394ff5"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 59.69 109.22 0)
 		(unit 1)
@@ -18394,71 +18519,6 @@
 			(project "fakeTecv5"
 				(path "/9f57df6b-a9d3-4597-bf34-a2cbfc394ff5"
 					(reference "J32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 256.54 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f8b0c54a-7fad-45cf-be5f-ef07924bf2bb")
-		(property "Reference" "#PWR028"
-			(at 256.54 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 260.096 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 256.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 256.54 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d0442fc6-fb07-448b-a2c5-d460f5485f4b")
-		)
-		(instances
-			(project "fakeTecv5"
-				(path "/9f57df6b-a9d3-4597-bf34-a2cbfc394ff5"
-					(reference "#PWR028")
 					(unit 1)
 				)
 			)
