@@ -4792,9 +4792,9 @@
 		)
 		(uuid "5a8883fc-5331-4468-8698-ac9b0cba0e04")
 	)
-	(text "Reference Schematic For DIY Meshtastic:\nhttps://github.com/meshtastic/firmware/blob/develop/variants/nrf52840/diy/nrf52_promicro_diy_tcxo/Schematic_Pro-micro_Pinouts_2025-12-04.pdf\n\nReference Firmware Varables:\nhttps://github.com/meshtastic/firmware/blob/develop/variants/nrf52840/diy/nrf52_promicro_diy_tcxo/variant.h"
+	(text "Reference Schematic For DIY Meshtastic:\nhttps://github.com/meshtastic/firmware/blob/develop/variants/nrf52840/diy/nrf52_promicro_diy_tcxo/Schematic_Pro-micro_Pinouts_2025-12-04.pdf\n\nReference Firmware Varables:\nhttps://github.com/meshtastic/firmware/blob/develop/variants/nrf52840/diy/nrf52_promicro_diy_tcxo/variant.h\n\nReference Platform IO GPIO Mapping:\nhttps://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support/blob/main/.platformio/packages/framework-arduinoadafruitnrf52/variants/nicenano/variant.cpp"
 		(exclude_from_sim no)
-		(at 133.096 -7.874 0)
+		(at 132.334 -13.208 0)
 		(effects
 			(font
 				(size 1.27 1.27)
