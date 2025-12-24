@@ -392,6 +392,19 @@
 			(justify left bottom)
 		)
 	)
+	(fp_text user "Tl;DR: Adafruit recommends 0.254 offset (= 0.01inch = 0.005inch * 2)"
+		(at 8.94 11.23 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "36c8ccf7-ad72-4883-a48e-28e95d96e628")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(fp_text user "https://electronics.stackexchange.com/questions/661598/is-there-a-connector-for-0-1in-pitch-linear-hole-patterns"
 		(at 8.7 4.65 0)
 		(unlocked yes)
@@ -401,6 +414,32 @@
 			(font
 				(size 1 1)
 				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "https://web.archive.org/web/20210301072405/https://www.sparkfun.com/tutorials/114"
+		(at 8.9 9.46 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "83d0e3e6-6bf5-4064-b734-432614b787fc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Reference Infomation On The Offset Friction Headers Used For OLED Screen:\n"
+		(at 8.9 7.79 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "e4c3ff0b-f583-4fd8-b5a7-f86d0bb84164")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
 			)
 			(justify left bottom)
 		)

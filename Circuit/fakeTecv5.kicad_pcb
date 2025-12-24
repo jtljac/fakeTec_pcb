@@ -121,6 +121,7 @@
 			(outputdirectory "out/")
 		)
 	)
+	(property "REVISION" "5")
 	(net 0 "")
 	(net 1 "/Batt%")
 	(net 2 "GND")
@@ -11190,7 +11191,7 @@
 		(path "/50755764-a7c2-4853-aeb0-2fc734f81963")
 		(sheetname "/")
 		(sheetfile "fakeTecv5.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(fp_text user "${REFERENCE}"
 			(at 0 -2.5 180)
 			(unlocked yes)
@@ -15426,7 +15427,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/532/53261/532610271_sd.pdf?inline"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -15439,7 +15440,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Combined footprint for JST_PH_S2B-PH-SM4-TB and JST_GH_SM02B-GHS-TB"
+		(property "Description" "1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Tin (Sn) Plating, Friction Lock, 2 Circuits, Natural, Tape and Reel"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -23970,26 +23971,6 @@
 		(layer "B.Mask")
 		(uuid "99713180-1872-4110-8577-bee4e33d3709")
 	)
-	(gr_line
-		(start 117.7 51.35)
-		(end 117.7 52.35)
-		(stroke
-			(width 0.16)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "1c91335f-2751-464e-9e2a-b0abc4ae1092")
-	)
-	(gr_line
-		(start 117.5 49.15)
-		(end 117.5 49.65)
-		(stroke
-			(width 0.16)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "55d89eb3-d7d6-4895-9671-ed49cbcccdf1")
-	)
 	(gr_poly
 		(pts
 			(xy 106.045982 59.571699) (xy 106.047566 59.549588) (xy 106.050207 59.527557) (xy 106.053905 59.50565)
@@ -24142,46 +24123,6 @@
 		(fill yes)
 		(layer "F.SilkS")
 		(uuid "6da4d762-a6d6-4e38-98e1-4538edcf66e9")
-	)
-	(gr_line
-		(start 117.7 52.35)
-		(end 117.85 52.55)
-		(stroke
-			(width 0.16)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "6ea90aba-c27d-4545-9e8c-c3b5ad5cbe6f")
-	)
-	(gr_line
-		(start 117.5 49.65)
-		(end 117.7 50.05)
-		(stroke
-			(width 0.16)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "90830ae3-2a90-4dea-b0fa-20c1cf8b7652")
-	)
-	(gr_line
-		(start 117.7 51.35)
-		(end 117.95 51.2)
-		(stroke
-			(width 0.16)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "af0f2c89-e06b-4720-a580-43e1e044565f")
-	)
-	(gr_line
-		(start 117.95 48.8)
-		(end 117.5 49.15)
-		(stroke
-			(width 0.16)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "d8a44a99-fc94-497d-9ec6-d4fa3210a87d")
 	)
 	(gr_line
 		(start 118.81 60.89)
@@ -24650,18 +24591,6 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "SDA"
-		(at 118 48.85 0)
-		(layer "F.SilkS")
-		(uuid "5a1279b9-a949-4fdd-8c3d-3ee702114b14")
-		(effects
-			(font
-				(size 0.7 0.7)
-				(thickness 0.16)
-			)
-			(justify left)
-		)
-	)
 	(gr_text "nRF52840\nNice!Nano V2.0\n& promicro"
 		(at 114.83 74.19 90)
 		(layer "F.SilkS")
@@ -24686,7 +24615,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "roTec Rev4\nBy Jacob / Brian"
+	(gr_text "roTec Rev${REVISION}\nBy Jacob / Brian"
 		(at 102.05 45.3 90)
 		(layer "F.SilkS" knockout)
 		(uuid "9d213bb1-71ca-457a-a14c-3a4c68c37955")
@@ -24733,18 +24662,6 @@
 				(bold yes)
 			)
 			(justify left bottom)
-		)
-	)
-	(gr_text "SCL"
-		(at 118 51.4 0)
-		(layer "F.SilkS")
-		(uuid "fb87578c-7733-4e46-bf2a-76dc1a44d170")
-		(effects
-			(font
-				(size 0.7 0.7)
-				(thickness 0.16)
-			)
-			(justify left)
 		)
 	)
 	(gr_text "3.3V"

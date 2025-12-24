@@ -5,9 +5,11 @@
 	(uuid "9f57df6b-a9d3-4597-bf34-a2cbfc394ff5")
 	(paper "A4")
 	(title_block
-		(title "roTec v5 (faketec v5 fork)")
-		(date "2025-03-19")
-		(rev "4")
+		(title "roTec Rev${REVISION}")
+		(date "2025-12-25")
+		(rev "${REVISION}")
+		(comment 1 "Fork Of FakeTec (https://github.com/gargomoma/fakeTec_pcb/)")
+		(comment 2 "Development Source: https://github.com/mofosyne/roTec_pcb")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x01_Socket"
