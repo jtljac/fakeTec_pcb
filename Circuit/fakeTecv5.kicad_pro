@@ -626,7 +626,7 @@
       "plot": "out/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "fakeTecv5.step",
       "svg": "",
       "vrml": ""
     },
@@ -796,6 +796,6 @@
     ]
   ],
   "text_variables": {
-    "REVISION": "5"
+    "REVISION": "5.1"
   }
 }
