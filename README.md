@@ -33,6 +33,7 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
   - Changed labels to my preferred naming scheme
 - Setup netclasses
 - Shifted pads `P1.01`, `P1.02`, and `P1.07` to where I'm pretty sure they're supposed to be
+  - I also added two sets as the NRF ProMicro and the Nice!Nano appear to have them in different places.
 - Removed jumper for BMS
   - I will always install a BMS
 - Removed jumper for GPS/FET1 Drain to FET1
@@ -89,6 +90,41 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 
 # About Meshtastic
 [Meshtastic](https://meshtastic.org/)® is a registered trademark of Meshtastic LLC. Meshtastic software components are released under various licenses, see github for details.
+
+# Troubleshooting
+## Cannot write the firmware to the Microcontroller
+It appears that many NRF ProMicros on AliExpress come with an older version of the bootloader which doesn't support
+uf2 files that are larger than 512KB.
+The steps to fix are detailed in [this github issue](https://github.com/meshtastic/firmware/issues/7091), of which were
+taken from [this older FakeTec Guide](https://adrelien.com/blog/diy-meshtastic-how-to-build-your-own-meshtastic-device-with-faketec-pcb-nrf52840/#step-1-update-the-bootloader).  
+They're also copied below for convenience:
+1. Connect the node to your PC using a data cable
+2. Put the node into DFU (Device Firmware Update) mode by shorting the GND and Reset pins once or twice, A new drive 
+   should appear on your computer
+3. Check the INFO_UF2.TXT file to determine your current bootloader version
+4. Visit Adafruit's GitHub page for nRF52 Bootloader releases
+5. Find the next release after your current version (you must update incrementally)
+6. Download the nice_nano_bootloader-X.X.X.HEX and nice_nano_bootloader-X.X.X.UF2 files for your board
+7. Drag and drop the .HEX file onto the drive first, then the .UF2 file
+8. The device will disconnect and restart
+9. Check the bootloader version again and repeat if necessary until you reach the latest version
+
+My ProMicros arrived at version 6.0.0, and I only updated to 0.6.3 as it started working at that version and it looked
+like a long process to go to the latest version.
+
+## The Microcontroller isn't getting power/The microcontroller can't connect the battery/The microcontroller can't connect to the LoRa module/The buttons don't work
+The micro controller is pretty difficult to solder to the pads through the through holes, it took me many attempts to
+get it right.
+
+Make sure you check each connection using a multimeter before you decide you've finished soldering.
+
+If you're really struggling, you can use a fine file to turn the through holes into castellated edges.
+![Castellated ProMicro](./Images/castellated.png) 
+Be careful though, fibreglass shards are not good for your lungs
+
+## The battery isn't working
+Double check which way round your battery connector is wired. The batteries I bought were wired the opposite way to the
+connector on the board.
 
 # Disclaimer
 No warranty is provided.
