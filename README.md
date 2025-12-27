@@ -47,8 +47,6 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 | C1,C2               | 100nF                      | 2   |                                  |                      | 0805                                   |                                                                                                                                               |                                                                                                                                                                                            | [LCSC](https://www.lcsc.com/search?q=100nF%25200805&s_z=n_100nF%25200805)                                                                        |
 | M1                  | ERM Motor                  | 1   | Seeed Technology Co., Ltd        | 316040001            | Wire Leads                             | [datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2234/1020-15-003-001_Spec.pdf                                      ) | [digikey](https://www.digikey.com.au/en/products/detail/seeed-technology-co-ltd/316040001/5487672)                                                                                         | [aliexpress](https://www.digikey.com.au/short/332zpfdb)                                                                                          |
 
-</details>
-
 Purchase Tips:
 * You can often buy SMD resistor kits in booklets from most places like amazon or aliexpress.
 * Both nice!nano and promicro versions are supported
@@ -73,6 +71,8 @@ Purchase Tips:
   - Direct wiring. 
     - e.g. JST-PH-2 but as an external wire like this [aliexpress product](https://www.aliexpress.com/item/1005002564191148.html)
 
+</details>
+
 ### Configure
 
 Included in this repository is `roTec_module_config.yaml` which when you run below command will configure the buzzer, vibration motor and encoder.
@@ -86,7 +86,7 @@ meshtastic --port $PORT --reboot
 Alternatively you could manually use the web interface to set the settings using <client.meshtastic.org> as shown below
 (No GPS settings it's already enabled by default if the module is installed).
 
-For Rotary Encoder Support:
+#### Rotary Encoder Settings:
 
 | Settings                                          | Value   |
 |---------------------------------------------------|---------|
@@ -100,7 +100,7 @@ For Rotary Encoder Support:
 | module_config.cannedMessage.inputbrokerPinPress   | 39      |
 | module_config.cannedMessage.rotary1Enabled        | true    |
 
-For Vibration Notification:
+#### Vibration Notification Settings:
 
 | Settings                                             | Value |
 |------------------------------------------------------|-------|
@@ -110,7 +110,9 @@ For Vibration Notification:
 | module_config.externalNotification.alertMessageVibra | true  |
 | module_config.externalNotification.outputVibra       | 8     |
 
-For Buzzer (Note you have to override buzzer gpio in config device page):
+#### Buzzer Settings:
+
+**Note you have to override buzzer gpio in config device page**
 
 | Settings                                              | Value                                                                                                     |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
