@@ -1,0 +1,37 @@
+# e.g.
+#     meshtastic --port /dev/ttyACM0 --configure roTec_module_config.yaml
+#     meshtastic --port /dev/ttyACM0 --reboot
+
+config:
+  device:
+    # Buzzer GPIO is pointed somewhere else by default. Need to override
+    buzzerGpio: 6
+
+module_config:
+
+  cannedMessage:
+    # Enable Rotary Encoder
+    allowInputSource: rotEnc1
+    enabled: true
+    inputbrokerEventCcw: RIGHT
+    inputbrokerEventCw: LEFT
+    inputbrokerEventPress: SELECT
+    inputbrokerPinA: 33
+    inputbrokerPinB: 34
+    inputbrokerPinPress: 39
+    rotary1Enabled: true
+
+  externalNotification:
+    # Enable And Configure Vibration Motor and Buzzer
+    alertBell: true
+    alertBellBuzzer: true
+    alertBellVibra: true
+    alertMessageBuzzer: true
+    alertMessageVibra: true
+    enabled: true
+    outputBuzzer: 6
+    outputVibra: 8
+    usePwm: true
+
+# Buzzer default ringtone
+ringtone: 24:d=32,o=5,b=565:f6,p,f6,4p,p,f6,p,f6,2p,p,b6,p,b6,p,b6,p,b6,p,b,p,b,p,b,p,b,p,b,p,b,p,b,p,b,1p.,2p.,p
