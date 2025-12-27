@@ -49,6 +49,29 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 
 </details>
 
+Purchase Tips:
+* You can often buy SMD resistor kits in booklets from most places like amazon or aliexpress.
+* Both nice!nano and promicro versions are supported
+* You can swap the AO3400A n-channel mosfet with other higher current mosfet like SI2312 as long as the pins and packaqe size matches.
+* Vibrations motors can be purchased in bulk pretty cheaply in aliexpress, ebay, amazon, etc...
+* XB8089D0 BMS can be skipped if your battery have integrated battery protection already
+* JST-SH-4 is optional if you want to solder the rotary encoder, gps, or i2c sensors directly onto the solder pads provided on the board instead
+* For GPS support you can buy either ATGM336H or GY-GPS6MV2 modules
+* Any OLED screen can be used. Pick one that is designed for your case. Often it's an SSD1306 controller based OLED screen.
+* Any lora radios seen inside this [reference schematic](https://github.com/meshtastic/firmware/blob/develop/variants/nrf52840/diy/nrf52_promicro_diy_tcxo/Schematic_Pro-micro_Pinouts_2025-12-04.pdf) that fits the footprint and pinout is supported
+  - Just like the faketecs you can also use RA-01SH.
+* This design supports 3 different battery connectors types
+  - Molex Picoblade 2-Pin
+    - MPC: Molex, MPN: 0532610271
+    - MPC: CJT (Changjiang Connectors), MPN: A1251WR-S-2P
+    - Pitch: 1.25mm
+    - Used By: HelTec LoRa 32
+  - JST PH 2-Pin
+    - MPN: S2B-PH-SM4-TB
+    - Pitch: 2.00mm 
+    - Used By: RAK19007 WisBlock
+  - Direct wiring. 
+    - e.g. JST-PH-2 but as an external wire like this [aliexpress product](https://www.aliexpress.com/item/1005002564191148.html)
 
 ### Configure
 

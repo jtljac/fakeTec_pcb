@@ -5483,7 +5483,7 @@
 		)
 		(uuid "1550c9f0-9d2a-4903-b9e9-34331923d442")
 	)
-	(text_box "JST PH 2-Pin\n  - MPN:S2B-PH-SM4-TB\n  - Pitch: 2.00mm \n  - Used By: RAK19007 WisBlock\n  - This polarity is also common\n     for lipos in Aliexpress"
+	(text_box "JST PH 2-Pin\n  - MPN: S2B-PH-SM4-TB\n  - Pitch: 2.00mm \n  - Used By: RAK19007 WisBlock\n  - This polarity is also common\n     for lipos in Aliexpress"
 		(exclude_from_sim no)
 		(at 15.24 151.13 0)
 		(size 58.42 25.4)
