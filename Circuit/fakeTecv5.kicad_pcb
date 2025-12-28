@@ -25463,7 +25463,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "680Ω"
+	(gr_text "680KΩ"
 		(at 100.11 48.53 90)
 		(layer "B.SilkS")
 		(uuid "ea4ea614-b732-46eb-bd88-e6c4beb8c6ce")
