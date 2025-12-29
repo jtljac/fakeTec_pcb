@@ -79,6 +79,7 @@ Included in this repository is `roTec_module_config.yaml` which when you run bel
 
 ```
 PORT=/dev/ttyACM0 # Set to the serial port of the roTec after flashing
+meshtastic --port $PORT --info
 meshtastic --port $PORT --configure roTec_module_config.yaml
 meshtastic --port $PORT --reboot
 ```
