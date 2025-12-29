@@ -2,7 +2,7 @@
 
 | Front                               | Back                              |
 |:------------------------------------|:----------------------------------|
-| ![Front of PCB](./Images/front.png) | ![Back of PCB](./Images/back.png) |
+| ![Front of PCB](./Circuit/documentation/front.png) | ![Back of PCB](./Circuit/documentation/back.png) |
 
 This [Jacob's](https://github.com/jtljac) fork of the fakeTec (With enhancement from [Brian](https://github.com/mofosyne)), a low-cost nRF52 device with the form-factor of the Heltec v2, v3, & v4 devices 
 compatible with [Meshtastic](https://meshtastic.org/)®. Focusing on creating a design that will support the use of rotary encoders.
@@ -13,12 +13,10 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 
 ## Design Documentations
 
-![](./Circuit/documentation/fakeTecv5.svg)
+![](./Circuit/documentation/svg/fakeTecv5.svg)
 
-* [Schematic as pdf](./Circuit/documentation/fakeTecv5.pdf)
-* [Schematic Bill Of Materials](./Circuit/documentation/fakeTecv5.csv)
-* [Interactive BOM](./Circuit/documentation/ibom.html)
-* [PCB Artwork pdf](./Circuit/documentation/fakeTecv5__Assembly.pdf)
+* [Schematic as pdf](./Circuit/documentation/roTec_schematic.pdf)
+* [Schematic Bill Of Materials](./Circuit/documentation/roTec_bom.csv)
 
 * You may also want to manufacture [EC11 Rotary Encoder Horizontal Breakout Board](https://github.com/mofosyne/kicad_useful_pcbs/tree/main?tab=readme-ov-file#ec11-horizontal-breakout-board), so you can more easily wire the rotary encoder to the roTec via a JST-SH-4 cable.
 
