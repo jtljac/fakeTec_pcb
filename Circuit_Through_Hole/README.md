@@ -1,4 +1,6 @@
-# roTec_pcb
+# roTecTH_pcb
+
+Through Hole Version
 
 | Front                               | Back                              |
 |:------------------------------------|:----------------------------------|
