@@ -1,5 +1,9 @@
 # roTec_pcb
 
+| Front (Through Hole Version)        | Back (Through Hole Version)       |
+|:------------------------------------|:----------------------------------|
+| ![Front of PCB](./Circuit_Through_Hole/documentation/front.png) | ![Back of PCB](./Circuit_Through_Hole/documentation/back.png) |
+
 | Front                               | Back                              |
 |:------------------------------------|:----------------------------------|
 | ![Front of PCB](./Circuit/documentation/front.png) | ![Back of PCB](./Circuit/documentation/back.png) |
@@ -11,7 +15,18 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 [fakeTec V5 Rev. B](https://github.com/gargomoma/fakeTec_pcb/issues/24), licensed under 
 [CERN-OHL-P-2.0](https://choosealicense.com/licenses/cern-ohl-p-2.0/).
 
-## Design Documentations
+## Design Documentations (Through Hole Version)
+
+![](./Circuit_Through_Hole/documentation/svg/fakeTecv5.svg)
+
+* [Schematic as pdf](./Circuit_Through_Hole/documentation/roTec_schematic.pdf)
+* [Schematic Bill Of Materials](./Circuit_Through_Hole/documentation/roTec_bom.csv)
+
+* You may also want to manufacture [EC11 Rotary Encoder Horizontal Breakout Board](https://github.com/mofosyne/kicad_useful_pcbs/tree/main?tab=readme-ov-file#ec11-horizontal-breakout-board), so you can more easily wire the rotary encoder to the roTec via a JST-SH-4 cable.
+
+This has the same parts list as the SMD version, but with a few parts subtracted.
+
+## Design Documentations (Surface Mount Version)
 
 ![](./Circuit/documentation/svg/fakeTecv5.svg)
 
@@ -70,6 +85,8 @@ Purchase Tips:
     - e.g. JST-PH-2 but as an external wire like this [aliexpress product](https://www.aliexpress.com/item/1005002564191148.html)
 
 </details>
+
+## Setting Up Device
 
 ### Configure
 
