@@ -6,7 +6,8 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 [fakeTec V5 Rev. B](https://github.com/gargomoma/fakeTec_pcb/issues/24), licensed under 
 [CERN-OHL-P-2.0](https://choosealicense.com/licenses/cern-ohl-p-2.0/).
 
-Further inspiration has been taken from [Brian's Fork, the roTec](https://github.com/mofosyne/roTec_pcb)
+Further inspiration has been taken from [Brian's Fork, the roTec](https://github.com/mofosyne/roTec_pcb), an alternative
+board with greatly expanded wiring options and extra on-board guidence.
 
 # Pictures
 | Front                               | Back                              |
