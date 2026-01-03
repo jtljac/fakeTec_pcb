@@ -6,6 +6,8 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 [fakeTec V5 Rev. B](https://github.com/gargomoma/fakeTec_pcb/issues/24), licensed under 
 [CERN-OHL-P-2.0](https://choosealicense.com/licenses/cern-ohl-p-2.0/).
 
+Further inspiration has been taken from [Brian's Fork, the roTec](https://github.com/mofosyne/roTec_pcb)
+
 # Pictures
 | Front                               | Back                              |
 |:------------------------------------|:----------------------------------|
@@ -21,11 +23,11 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 - JST PH2.0mm connector for batteries
 - I2C side ports ready to connect an OLED SSD1306 screen.
 - Pads for connecting an encoder for canned messages
+- A pad exposing P1.06 (38) for misc use
 - Pads for connecting a serial GPS module
 - MOSFETs for switching high current components
-  - Using a solder pad jumper, MOSFET 1 can chose between the GPS module ground to enable power saving the GPS module, 
-    or a regular pad like MOSFETs 2 & 3.
 - 2mm mounting holes
+- Mostly clear edges for mounting
 
 ## Modifications from fakeTec V5 Rev. B
 - Cleaned up schematic
@@ -42,11 +44,12 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
   - I already have these and they're a drop in replacement
 - Changed all resistors and Capacitors to 805 sized
   - I already have all the resistors in this size
-- Added pullup resistors to rotary encoder pads
-  - These probably support internal pullups, but just to be safe
-- Added ground pad to rotary encoder pads
+- Removed debouncing capacitors and pull-up resistors from the buttons
+  - [User mofosyne](https://github.com/mofosyne) provided evidence that it is unnecessary 
+    [here](https://github.com/gargomoma/fakeTec_pcb/issues/64)
+- Added ground pads to rotary encoder pads
+- Added access to P1.06 for misc usage next to rotary encoder pads
 - Changed battery connector to a JST PH-2.0mm
-  - Struggled to find JST 1.25 connectors
   - PH-2.0mm are also apparently more reliable
 - Removed lots of silkscreen text
   - Don't need values or component names, just component references
@@ -58,9 +61,7 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 - Attempted to reduce layer crossings
 
 
-# Variants
-
-(aka firmware files)
+# Firmware
 
 | Version      | Lora Modules                     | Official Repo link                                                                                                                                          | Unofficial Repo link                                                                                                                                                                |
 |:-------------|:---------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,6 +69,14 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 | Without TCXO | EByte E22/E220-xxxMM-22S/RA-01SH | <a href="https://github.com/meshtastic/firmware/tree/master/variants/nrf52840/diy/nrf52_promicro_diy_xtal" target="_blank">Official repo - Without TCXO</a> | <a href="https://github.com/mrekin/MeshtasticCustomBoards/tree/main/firmware/variants/nrf52840/diy/promicro_diy_mm" target="_blank">Without TCXO</a> @mrekin/MeshtasticCustomBoards |
 
 > If you don't want to build your own image use <a href="https://flasher.meshtastic.org/" target="_blank">the official web flasher</a>. Select the `NRF52 Pro-micro DIY` under `Community Supported Devices` as your target device.
+
+# Device Setup
+After you've set up your device, there are a few things you can do in the config to tune it
+
+## Battery ADC Multiplier
+The default ADC multiplier for the DIY NRF52 Promicro firmware is slightly off at about `1.85`, due to this design using
+a slightly differnt voltage divider, I found that mine is more accurate with a value of `1.68`.  
+You should of course still tune yours further with https://meshtastic.org/docs/configuration/radio/power/#calibration-process-attribution
 
 # Bill of materials
 
@@ -78,8 +87,8 @@ This design is specifically based off of [Šimon Hořánek's](https://github.com
 | XB8089D0 BMS                   | [LCSC](https://www.lcsc.com/product-detail/C2760005.html)                                                                                   |                                                                                                           |
 | 3x AO3400A MOSFETs             | [LCSC](https://www.lcsc.com/product-detail/C347475.html)<br/> [AliExpress](https://www.aliexpress.com/item/1005007115799728)                | Quite frankly, any logic level N-Channel MOSFET with a `SOT-23` footprint that takes at least 5v will do. |
 | SMD JST PH2.0mm Socket         | [LCSC](https://www.lcsc.com/product-detail/C295747.html)<br/> [LCSC](https://www.lcsc.com/product-detail/C7429689.html)                     |                                                                                                           |
-| SMD 805 Resistors              |                                                                                                                                             | You'll need 1x 1k, 8x 10K, 1x 680K, 1x 1M                                                                 |
-| SMD 805 Ceramic Capacitors     |                                                                                                                                             | You'll need 4 x 100nF                                                                                     |
+| SMD 805 Resistors              |                                                                                                                                             | You'll need 1x 1k, 3x 10K, 1x 680K, 1x 1M                                                                 |
+| SMD 805 Ceramic Capacitors     |                                                                                                                                             | You'll need 2 x 100nF                                                                                     |
 | 2x smd Button                  | [LCSC](https://www.lcsc.com/product-detail/C41427500.html)                                                                                  | You want something around 4 x 3 x 2                                                                       |
 | OLED SSD1306 i2c (optional)    | [AliExpress](https://www.aliexpress.com/item/1005005970901119.html)                                                                         |                                                                                                           |
 | Battery connection (optional)  | [AliExpress](https://www.aliexpress.com/item/1005002564191148.html)                                                                         | This is an example.                                                                                       |
