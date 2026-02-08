@@ -129,7 +129,7 @@ get it right.
 Make sure you check each connection using a multimeter before you decide you've finished soldering.
 
 If you're really struggling, you can use a fine file to turn the through holes into castellated edges.
-![Castellated ProMicro](./Images/castellated.png) 
+![Castellated ProMicro](./Images/castellated.jpg) 
 Be careful though, fibreglass shards are not good for your lungs
 
 ## The battery isn't working
