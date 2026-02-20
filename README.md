@@ -14,6 +14,27 @@ board with greatly expanded wiring options and extra on-board guidence.
 |:------------------------------------|:----------------------------------|
 | ![Front of PCB](./Images/front.png) | ![Back of PCB](./Images/back.png) |
 
+# Schematic
+<details>
+<summary>Schematic and component list</summary>
+Note this list is for the v5.5.1
+
+![schematic](/./Images/Schematic.png)
+
+| Component Ref | Value     |
+|:------------- |:--------- |
+| C1, C2        | 100nf     |
+| Q1, Q2, Q3    | AO3400A*  |
+| R1, R2, R3    | 10K       |
+| R4            | 680K      |
+| R5            | 1M        |
+| U1            | XB8089D0  |
+| U2            | HT-RA62   |
+| U3            | nice!nano |
+
+\* Can be any SOT-23 logic level MOSFET that supports atleast 3v
+</details>
+
 ## Features
 - Small size based on Heltec v3: You can use the same cases!
 - Lora with Heltec's HT-RA62
@@ -80,7 +101,6 @@ a slightly differnt voltage divider, I found that mine is more accurate with a v
 You should of course still tune yours further with https://meshtastic.org/docs/configuration/radio/power/#calibration-process-attribution
 
 # Bill of materials
-
 | Part                           | Source                                                                                                                                      | Note                                                                                                      |
 |:-------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|
 | NRF52840 ProMicro or n!icenano | [AliExpress](https://www.aliexpress.com/item/1005006446457448.html)<br/> [niceKeyboards](https://nicekeyboards.com/nice-nano/#find-a-store) |[Please read it before buying red ProMicros](https://github.com/gargomoma/fakeTec_pcb/issues/30)           |
@@ -97,9 +117,6 @@ You should of course still tune yours further with https://meshtastic.org/docs/c
 | Antenna (Recommended           | [AliExpress](https://www.aliexpress.com/item/1005004607615001.html)                                                                         |                                                                                                           |
 | Antenna pigtail (recommended)  | [AliExpress](https://www.aliexpress.com/item/4001287491018.html)                                                                            | It may underperformed with a cheap black pigtail.                                                         |
 | PCB                            |                                                                                                                                             | Use your favourite company to get the PCB. I use [JLCPCB](https://jlcpcb.com/)                            |
-
-# About Meshtastic
-[Meshtastic](https://meshtastic.org/)® is a registered trademark of Meshtastic LLC. Meshtastic software components are released under various licenses, see github for details.
 
 # Troubleshooting
 ## Cannot write the firmware to the Microcontroller
@@ -135,6 +152,10 @@ Be careful though, fibreglass shards are not good for your lungs
 ## The battery isn't working
 Double check which way round your battery connector is wired. The batteries I bought were wired the opposite way to the
 connector on the board.
+
+
+# About Meshtastic
+[Meshtastic](https://meshtastic.org/)® is a registered trademark of Meshtastic LLC. Meshtastic software components are released under various licenses, see github for details.
 
 # Disclaimer
 No warranty is provided.
